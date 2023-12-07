@@ -1,0 +1,740 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace ;
+    font-family: 'VT323', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#section1{
+    display: flex;
+    flex-wrap: nowrap;
+    height:100%;
+
+}
+#article1{
+ background-color: #40000D;
+ width: 480px;
+ height:100vh;
+
+}
+#article2{
+    background-image: url("http://www.vexfx.com/live/tabletop/backgrounds/bgGhostTownNightRain.gif");
+    background-repeat: no-repeat;
+    background-size: 180vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+#article3{
+    background-color: #40000D;
+    width: 480px;
+    height:100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#zone{
+    position: relative;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    background-color: #DF9898;
+}
+
+#bouton{
+    position: relative;
+    font-family: 'VT323', sans-serif;
+    background: #40000D;
+    font-size: 50px;
+    top: 30%;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 10px 0px #740017;
+    display: inline-block;
+    transition: all .2s;
+    padding: 30px 20vh;
+    cursor: pointer;
+    border: 0;    
+}
+
+#bouton:active {
+    padding-bottom:36px;
+    box-shadow: 0 7px 0px #740017;
+    transition: all .2s;
+}
+
+#succes10pt{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+    top : 15%;
+}
+
+#succes1000pt{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+    top : 15%;
+}
+
+
+#succes100000pt{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+    top : 15%;
+}
+
+
+#succes_first_buy{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+    top : 15%;
+}
+
+#kill_container{
+    position: absolute;
+    top: 62%;
+    z-index: 2;
+    display: flex;
+}
+
+#kill_affichage{
+    z-index: 2;
+    color: #fff;
+    font-size: 7vh;
+}
+
+#kill_img{
+    width: 60%;
+    height: auto;
+}
+
+#classement{
+    position: absolute;
+    z-index: 2;
+    top: 2%;
+    height: auto;
+    width: 6%;
+    left: 76%;
+}
+
+#divperso{
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: url(../ressources/img/back.jpg) ;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 60%;
+}
+
+#perso{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-left: 23%;
+    top:5px;
+}
+
+.zombie{
+    position: absolute;
+}
+
+#zombie1{
+    left: 40%;
+    top: 33%;
+    height: 30%;
+    width: 20%;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
+
+#zombie2{
+    left: 40%;
+    top: 35%;
+    height: 30%;
+    width: 20%;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
+
+#zombie3{
+    left: 37%;
+    top: 36%;
+    height: 30%;
+    width: 20%;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
+
+#zombie4{
+    left: 29%;
+    top: 30%;
+    height: 36%;
+    width: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
+
+#zombie5{
+    left: 43%;
+    top: 30%;
+    height: 36%;
+    width: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
+
+#zombie6{
+    left: 35%;
+    top: 19%;
+    height: 47%;
+    width: auto;
+    opacity: 0;
+    transition: opacity ease-in 0.5s;
+}
+
+.sons{
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 2vh;
+    left: 17%;
+    cursor: pointer;
+}
+
+#sons_on{
+    display: block;
+}
+
+#sons_off{
+    display: none;
+}
+
+#divchargment{
+    width: 20%;
+    height: 50px;
+}
+
+#container_life_barre{
+    position: absolute;
+    height: 2%;
+    top: 19%;
+    left: 43%;
+    overflow-x: hidden;
+}
+.chargement {
+    position: absolute;
+    top: 18%;
+    left: 41%;
+    width: 15%;
+    height: 28px;
+    z-index: 2;
+}
+
+#barre {
+    width: 200px;
+    height: 15px;
+    z-index: 1;
+    background-color: #f00;
+}
+
+
+
+.fond_boutique{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-bottom: 10%;
+    border-radius: 25px;
+}
+
+#couteau_container{
+    background-color: #383838;
+}
+
+#gun_container{
+    background-color: #383838;
+}
+
+#shotgun_container{
+    background-color: #383838;
+}
+
+#disposition{
+    top: 30%;
+}
+
+#divpiece{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 64px;
+    color: white;  
+}
+
+.p1{  
+    font-size: 30px;
+    color: white;
+    margin-left: 10%;
+}
+
+.p2{  
+    font-size: 16px;
+    color: white;
+    
+}
+
+#sang{
+    position: absolute;
+    width: 33vh;
+}
+
+.armeimg{
+    width: 50px;
+    height: auto;
+}
+
+#shotgun{
+    position: relative;
+    width: 50px;
+    height: auto;
+    transform: rotate(-30deg);
+}
+.tdarme{
+    background-color: #DF9898;
+    width: 20%;
+    height: auto;
+}
+
+#ligne{
+    background-color: black;
+    width: 100%;
+    height: 3px;
+}
+
+.tdnivarme{
+    font-size: large;
+    font-style: oblique;
+    color: white;
+}
+
+#divsucces{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divtrophe{
+    background-color: #383838;
+    margin: 5%;
+    width: 30%;
+    margin-left: 10%;
+    height: 10vh;
+
+}
+
+.center{
+ text-align: center;
+ width: 30%;
+}
+
+#container_score{
+    position: relative;
+    display: flex;
+    left: 5%;
+    width: 90%;
+    vertical-align: middle;
+}
+
+#score{
+    color: #fff;
+    font-size: 3vh;
+    position: relative;
+    top: 40%;
+}
+
+.tableboutique{
+    height: 100px;
+}
+
+#coin{
+    width: 40px;
+    height: 60px;
+    position: relative;
+    margin-bottom: 20%;
+    margin-right: 7%;
+    top: 25%;
+}
+
+#couteau{
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+#gun{
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+.prix_container{
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+
+#prix_couteau{
+    color: #fff;
+    margin-left: 2%;
+}
+
+#prix_gun{
+    color: #fff;
+    margin-left: 2%;
+}
+
+#prix_shotgun{
+    color: #fff;
+    margin-left: 2%;
+}
+
+#m4{
+    width: 80%;
+    height: auto;
+    position: relative;
+    transform: rotate(-40deg);
+}
+
+.coin{
+    width: 10%;
+    height: auto;
+    position: relative;
+    margin-right: 3%;
+}
+#barremobil{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    bottom: 0%;
+    opacity: 0%;
+    z-index: 5;
+
+}
+@media screen and (max-width: 576px){
+    html{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #section1{
+        flex-wrap: wrap;
+    }
+    #article1{
+        width: 100%;   
+        background: #40000D;         
+    }
+    #article2{
+        width: 100%;
+        background-image: url("");
+        background-color:#383838;
+        background-size: 170%;
+    }
+    #article3{
+        width: 100%;
+        height: 100%;
+    }
+    #barremobil{
+        opacity: 100%;
+    }
+
+
+    .sons {
+        width: 15%;
+        height: auto;
+        position: absolute;
+        top: 2vh;
+        left: 3%;
+        cursor: pointer;
+    }
+
+    #zone{
+        height: 45%;
+        background-color: #383838;
+        
+    }
+    #zombie1{
+        left: 22%;
+        top: 117%;
+        height: auto;
+        width: 56%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+    }
+    
+    #zombie2{
+        left: 11%;
+        top: 118%;
+        height: auto;
+        width: 86%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+    }
+    
+    #zombie3{
+        left: 30%;
+        top: 120%;
+        height: auto;
+        width: 38%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+    }
+    
+    #zombie4{
+        left: -5%;
+        top: 121%;
+        height: 30%;
+        width: auto;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+    }
+    
+    #zombie5{
+        left: 27%;
+        top: 113%;
+        height: 42%;
+        width: auto;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+    }
+    
+    #zombie6{
+        left: 13%;
+        top: 108%;
+        height: 47%;
+        width: auto;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+    }
+    
+    
+    #divchargment{
+        width: 20%;
+        height: 50px;
+    }
+    
+    #container_life_barre{
+        position: absolute;
+        width: 200px;
+        height: 3%;
+        top: 937px;
+        left: 29%;
+        overflow-x: hidden;
+    }
+    .chargement {
+        position: absolute;
+        top: 103%;
+        left: 21%;
+        width: 51%;
+        height: auto;
+        z-index: 2;
+    }
+    
+    #barre {
+        top: 105%;
+        width: 200px;
+        height: 27px;
+        z-index: 1;
+        background-color: #f00;
+    }
+    h1{
+        font-size: 42px;
+        color: white;  
+    }
+    #sang{
+        position: absolute;
+        width: 81vh;
+        top: 200vh;
+    }
+    .tableboutique {
+        height: 10%;
+      }
+      .center{
+        width: 20%;
+      }
+      .coin{
+        width: 5%;
+      }
+      .fond_boutique {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 40%;
+        margin-bottom: 9%;
+        border-radius: 25px;
+      }
+      #container_score{
+        position: relative;
+        display: flex;
+        left: 22%;
+        width: 60%;
+    }
+    #coin {
+        width: 30px;
+        height: 50px;
+        position: relative;
+        margin-bottom: 10%;
+        margin-right: 7%;
+        top: 25%;
+      }
+      #shotgun_container{
+        background-color: #383838;
+        margin-bottom: 40%;
+    }
+    #kill_container {
+        position: absolute;
+        top: 103%;
+        right: 2%;
+        z-index: 2;
+        display: flex;
+      }
+      #classement{
+        position: absolute;
+        z-index: 2;
+        top: 2%;
+        height: auto;
+        width: 13%;
+        left: 80%;
+    }
+    #divperso{
+        display: inline-block;
+        margin-left: 25%;
+        margin-right: 20%;
+        margin-top: 20%;
+        margin-bottom: 4%;
+        background-image: url(../ressources/img/back.jpg);
+        background-repeat: no-repeat;
+        height: auto;
+        width: 60%;
+    }
+    #idtabmobil{
+        margin-left: 30%!important;
+    }
+    #divsucces{
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: 5%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    
+    .divtrophe{
+        background-color: #1F1F1F;
+        margin: 5%;
+        margin-left: 5%;
+        width: 30%;
+        margin-left: 10%;
+        height: auto;
+    
+    }
+    #succes10pt{
+        position: relative;
+        width: 70%;
+        height: 69%;
+        left: 15%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+        top : 15%;
+    }
+    
+    #succes1000pt{
+        position: relative;
+        width: 70%;
+        height: 69%;
+        left: 15%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+        top : 15%;
+    }
+    
+    
+    #succes100000pt{
+        position: relative;
+        width: 70%;
+        height: 69%;
+        left: 15%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+        top : 15%;
+    }
+    
+    
+    #succes_first_buy{
+        position: relative;
+        width: 86%;
+        height: 69%;
+        left: 5%;
+        opacity: 0;
+        transition: opacity ease-in 0.5s;
+        top : 15%;
+    }
+
+    .imgmenu{
+        height: auto;
+        width: 37%;
+        cursor: pointer;
+    }
+
+    .buttonmenu{
+        width: 20%;
+        height: 70%;
+        margin-top: 2%;
+        background: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        cursor: pointer;
+    }
+    #centerbtn{
+        margin-left: 20%;
+        border-left: none;
+        
+    }
+    #centerbtn2{
+        left: 2%;
+       
+        
+    }
+
+}

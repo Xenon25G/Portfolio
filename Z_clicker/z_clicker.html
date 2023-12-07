@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' href='style/style_zclicker.css'/>
+    <link rel="shortcut icon" type="image/ico" href="ressources/img/logo.png"/>
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+    <title>Z-Cliker</title>
+</head>
+<body>
+    <audio loop id="background_sound">
+        <source src="ressources/sons/music_fond.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="barremobil">
+            <a href="#article1"><Button id="centerbtn" class="buttonmenu">
+                <img class="imgmenu" src="ressources/img/profil.png" alt="profil">
+            </Button></a>
+            <a href="#article2"><Button id="centerbtn2" class="buttonmenu">
+                <img class="imgmenu" src="ressources/img/jeu_icon.png" alt="profil">
+
+            </Button></a>
+            <a href="#article3"><Button class="buttonmenu">
+                <img class="imgmenu" src="ressources/img/coins.png" alt="profil">
+            </Button></a>
+        </div>
+    <section id="section1">
+        
+        <article id="article1">
+            <div id="divperso">
+                <img id="perso" src="https://cdn.smartlydressedgames.com/original/2X/2/2bc721582dd0cc20bb6384586d6f8b3cb4a63d7e.gif" alt="personnage pixel art">
+            </div>
+            
+            <table id="idtabmobil" style=" margin-left:10%;">
+                <tr>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdarme">
+                        <img class="armeimg" src="ressources/img/couteau.png" alt="arme 1">
+                    </td>
+                    <td class="tdnivarme" id="compteur_couteau"></td>
+
+                    <td class="tdarme">
+                        <img class="armeimg" src="ressources/img/glock.png" alt="arme 2">
+                    </td>
+                    <td class="tdnivarme" id="compteur_gun"></td>
+
+                    <td class="tdarme">
+                        <img id="shotgun" src="ressources/img/m4.png" alt="arme 3"> 
+                    </td>
+                    <td class="tdnivarme" id="compteur_shotgun"></td>
+                </tr>
+            </table> 
+
+            <div id="divsucces">
+                    <div class="divtrophe">
+                        <img id="succes10pt" src="ressources/img/succes10pt.png" alt="">
+                    </div>
+
+                    <div class="divtrophe">
+                        <img id="succes1000pt" src="ressources/img/succes1000pt.png" alt="">
+                    </div>
+
+                    <div class="divtrophe">
+                        <img id="succes_first_buy" src="ressources/img/succes_first_buy.png" alt="">
+                    </div>
+                    <div class="divtrophe">
+                        <img id="succes100000pt" src="ressources/img/succes100000pt.png" alt="">
+                    </div>
+            </div>
+        </article>
+
+        <article id="article2">
+            <div id="fond"></div>
+            <div>
+                
+                
+                    <img class="chargement " src="ressources/img/barre_de_vie.png" alt="">
+                    <div id="container_life_barre">
+                        <div id="barre"></div>
+                    </div>
+                
+
+                <img class="zombie" id="zombie1" src="ressources/img/zombie1.gif" alt="Zombie pixel art">
+                <img class="zombie" id="zombie2" src="ressources/img/zombie2.gif" alt="Zombie pixel art">
+                <img class="zombie" id="zombie3" src="ressources/img/zombie3.gif" alt="Zombie pixel art">
+                <img class="zombie" id="zombie4" src="ressources/img/zombie4.gif" alt="Zombie pixel art">
+                <img class="zombie" id="zombie5" src="ressources/img/zombie5.gif" alt="Zombie pixel art">
+                <img class="zombie" id="zombie6" src="ressources/img/zombie6.gif" alt="Zombie pixel art">
+
+                <img class="sons" onclick="play_musique()" id="sons_on" src="ressources/img/sons_on.png" alt="icon sons">
+                <img class="sons" onclick="pause_musique()" id="sons_off" src="ressources/img/sons_off.png" alt="icon sons">
+
+                <div id="kill_container">
+                    <img id="kill_img" src="ressources/img/kill_img.png" alt="Zombie pixel art">
+                    <div id="kill_affichage"></div>
+                </div>
+
+                <a href="classement.html">
+                    <img id="classement" src="ressources/img/classement.png" alt="classement">
+                </a>
+
+            </div>
+        
+            <div id="zone">
+                <button onclick="boutonclic()" onmousedown="hit_down()" onmouseup="hit_up()" id="bouton">Attaquer</button>
+            </div>
+        </article>
+
+        <article id="article3">
+            <div id="divpiece">
+                <img id="sang"src="ressources/img/sang.gif">
+                <h1>Boutique</h1>
+            </div>
+
+            <div id="container_score">
+                <img id="coin" src="ressources/img/coin.png" alt="coin">
+                <div id="score"></div>
+            </div>
+
+
+            <div class="fond_boutique" id="couteau_container" onclick="buy_couteau()">
+                <table class="tableboutique">
+                    <tr>
+                        <td class="center">
+                            <img id="couteau" src="ressources/img/couteau.png" alt="arme1">
+                        </td>
+
+                        <td>
+                            <p class="p2">
+                                Couteau ensanglanté<br>
+                                +10 au clic<br><br>
+                                <div class="prix_container">
+                                    <img class="coin" src="ressources/img/coin.png" alt="coin"> : <div id="prix_couteau"></div>
+                                </div>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="fond_boutique" id="gun_container" onclick="buy_gun();">
+                <table class="tableboutique">
+                    <tr>
+                        <td class="center">
+                            <img id="gun" src="ressources/img/glock.png"  alt="arme1">
+                        </td>
+                        <td>
+                            <p class="p2">
+                                9mm<br>
+                                +10 au clic auto<br><br>
+                                <div class="prix_container">
+                                    <img class="coin" src="ressources/img/coin.png" alt="coin"> : <div id="prix_gun"></div>
+                                </div>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="fond_boutique" id="shotgun_container" onclick="buy_shotgun()">
+                <table class="tableboutique">
+                    <tr>
+                        <td class="center">
+                            <img  id="m4" src="ressources/img/m4.png" alt="arme1">
+                        </td>
+                        <td>
+                            <p class="p2">
+                                KS-23<br>
+                                +1000 au clic et clic auto<br><br>
+                            </p>
+                            <div class="prix_container">
+                                <img class="coin" src="ressources/img/coin.png" alt="coin"> : <div id="prix_shotgun"></div>
+                            </div><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </section>
+</body>
+<script src="js/script_zclicker.js"></script>
+</html>

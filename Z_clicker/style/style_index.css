@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centrerX{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centrerY{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#page1{
+    background-image: url("http://www.vexfx.com/live/tabletop/backgrounds/bgGhostTownNightRain.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    position: relative;
+    font-family: 'VT323', sans-serif;
+    color: #fff;
+    width: 43%;
+    font-size: 50px;
+    padding-bottom: 3vh;
+}
+
+#container{
+    position: relative;
+    background-color: rgb(56,54,54, 0.7);
+    border-radius: 20px;
+    width: 25%;
+    height: 46vh;
+    top: 23%;
+    border: solid #000 1px;
+    padding-top: 5%;
+}
+
+#placement_bouton{
+    position: relative;
+    width: 33%;
+    display: block;
+}
+
+#btn {
+    position: relative;
+    font-family: 'VT323', sans-serif;
+    background: #40000D;
+    font-size: 45px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 7px 0px #740017;
+    display: inline-block;
+    transition: all .2s;
+    padding: 0px 15px 5px;
+    cursor: pointer;
+    border: 0;
+  }
+#btn:active {
+    padding-bottom: 7px;
+    box-shadow: 0 0px 0px #740017;
+    transition: all .2s;
+}
+
+input{
+    position: relative;
+    width: 80%;
+    height: 4vh;
+    padding-left: 1vh;
+    border-radius: 5px;
+    font-family: 'VT323', sans-serif;
+    margin-bottom: 10%;
+    border: none;
+    font-size: 3vh;
+}
+
+.sons{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 2vh;
+    left: 85%;
+    cursor: pointer;
+}
+
+#sons_on{
+    display: block;
+}
+
+#sons_off{
+    display: none;
+}
+
+#personnage{
+position: relative;
+    left: 21%;
+    top: 8%;
+    width: 14%;
+}
+
+@media screen and (max-width: 576px){
+    #personnage{
+        position: relative;
+            left: 21%;
+            top: 8%;
+            width: 14%;
+        }
+
+    #page1{
+        background-color: #383838;
+        background-image: url("");
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1{
+        position: relative;
+        font-family: 'VT323', sans-serif;
+        color: #fff;
+        width: 43%;
+        font-size: 50px;
+        padding-bottom: 3vh;
+        display: none;
+    }
+
+    #container{
+        position: relative;
+        background-color: rgb(56,54,54, 0.7);
+        border-radius: 20px;
+        width: 80%;
+        height: 46vh;
+        top: 5%;
+        border: none;
+        padding-top: 5%;
+    }
+
+    input{
+        position: relative;
+        width: 80%;
+        height: 4vh;
+        padding-left: 1vh;
+        border-radius: 5px;
+        font-family: 'VT323', sans-serif;
+        border: none;
+        font-size: 3vh;
+        margin-bottom: 115%;
+        top: 10%;
+    }
+
+    #personnage {
+        position: relative;
+        left: 35%;
+        top: -22%;
+        width: 41%;
+    }
+
+    #placement_bouton {
+        position: relative;
+        width: 52%;
+        display: block;
+    }
+
+    #btn {
+        position: relative;
+        font-family: 'VT323', sans-serif;
+        background: #40000D;
+        font-size: 75px;
+        color: white;
+        border-radius: 7px;
+        box-shadow: 0 7px 0px #740017;
+        display: inline-block;
+        transition: all .2s;
+        padding: 0px 15px 5px;
+        cursor: pointer;
+        border: 0;
+      }
+}

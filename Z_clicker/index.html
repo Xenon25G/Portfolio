@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="ressources/img/logo.png"/>
+        <title>Z Clicker | Connexion</title>
+        <link href="style/style_index.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div id="page1">
+            <div id="container" class="centrerX">
+                <img class="sons" onclick="play_musique()" id="sons_on" src="ressources/img/sons_on.png" alt="icon sons">
+                <img class="sons" onclick="pause_musique()" id="sons_off" src="ressources/img/sons_off.png" alt="icon sons">
+                
+                <h1 class="centrerX">Ton pseudo</h1>
+                <br>
+                <input class="centrerX" id="username" type="text" name="username"  placeholder="TheGoatJanvresse" required="required" autocomplete="off">
+                <br>
+                <a href="z_clicker.html" class="centrerX" id="placement_bouton">
+                    <button onclick="send_username()" id="btn">Envoyer</button>
+                </a>
+            </div>
+            <img id="personnage" src="https://cdn.smartlydressedgames.com/original/2X/2/2bc721582dd0cc20bb6384586d6f8b3cb4a63d7e.gif" alt="personnage pixel art">
+
+            <audio loop id="background_sound">
+                <source src="ressources/sons/music_fond.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <script src="js/script_index.js"></script>
+    </body>
+</html>
+

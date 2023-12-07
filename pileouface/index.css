@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  background: linear-gradient(to top, #A29260, #FEF8BB);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  perspective: 800;
+}
+
+.piece {
+  display: block;
+  width: 40vmin;
+  height: 40vmin;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  animation: flip 1.2s ease infinite;
+}
+
+
+
+.piece img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.tail { transform: rotateY(180deg); }
+
+.btn {
+  background-color: #D3D3D3;
+  color: #EFEFEF;
+  padding: 1vmin 2vmin;
+  font-size: 4vmin;
+  border-radius: 1vmin;
+  border: solid 0.3vmin #999;
+  margin-top: 2vmin;
+  text-shadow: -2px 2px #999;
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+.btn:active {
+  transform: translateY(1vmin);
+}
+
+#divpile{
+    display: none ;
+ text-align: center;
+ position: absolute;
+ z-index: 1;
+ margin-left: 5%;
+ margin-top: 5%;
+ font-family: "Bitstrem Vera Serif Bold", Serif;
+ font-size: 70px;
+}
+
+#divface{
+    display: none ;
+     text-align: center;
+     position: absolute;
+     z-index: 1;
+     margin-left: 5%;
+     margin-top: 5%;
+     font-family: "Bitstrem Vera Serif Bold", Serif;
+     font-size: 70px;
+   }
+  
+   @font-face {
+
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+   }
+   

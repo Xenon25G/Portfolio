@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centrerX{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centrerY{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#page1{
+    background-image: url("http://www.vexfx.com/live/tabletop/backgrounds/bgGhostTownNightRain.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#cadre_classmement_pc{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    top: 5%;
+    display: block;
+}
+
+#cadre_classmement_tel{
+    position: absolute;
+    display: none;
+    width: 33%;
+    height: auto;
+}
+
+#data{
+    position: relative;
+    background-color: #575155;
+    width: 73vh;
+    height: 39vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    font-family: 'VT323', sans-serif;
+    top: 34vh;
+    left: 100vh;
+    font-size: 22px;
+}
+
+.sons{
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 2vh;
+    left: 95%;
+    cursor: pointer;
+}
+
+#sons_on{
+    display: block;
+}
+
+#sons_off{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    #page1 {
+        background-image: url("");
+        background-color: #383838;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .sons {
+        width: 12%;
+        height: auto;
+        position: absolute;
+        top: 2vh;
+        left: 85%;
+        cursor: pointer;
+    }
+
+    #cadre_classmement_pc {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: auto;
+        top: 5%;
+        display: none;
+    }
+
+    #cadre_classmement_tel {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 91%;
+        height: auto;
+        top: 15%;
+        display: block;
+    }
+
+    #data{
+        position: relative;
+        background-color: #575155;
+        width: 286px;
+        height: 329px;
+        overflow-x: auto;
+        overflow-y: auto;
+        font-family: 'VT323', sans-serif;
+        top: 382px;
+        left: 290px;
+        font-size: 14px;
+    }
+}
